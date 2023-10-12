@@ -3,16 +3,38 @@
 body {
     /* Default font size = 1rem*/
     font-size: 18px;
+    color: white;
+    background-image: url("assets/img/background.png");
+    background-repeat: repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bold;
+    text-align: center; 
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center; 
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: center; 
+}
+
+nav {
+    margin-top: 2rem;
     text-align: center; 
 }
 
 #intro{
-    width: 70ch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100ch;
 }
 
 #intro p{
@@ -20,5 +42,7 @@ h1 {
 }
 
 .redback{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: gray;
 }
