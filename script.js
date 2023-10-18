@@ -1,9 +1,15 @@
-// let introSection = document.querySelector("#intro")
-// introSection.style.background = "gray"
+// Slideshow
+let slideIndex = 0;
+showSlides();
 
-// introSection.className = "redback";
-
-// let heading = document.createElement("h1");
-// let headingText = document.createTextNode("What is it?");
-// heading.appendChild(headingText);
-// document.body.appendChild(heading);
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
