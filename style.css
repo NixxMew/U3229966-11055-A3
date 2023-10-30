@@ -6,7 +6,6 @@ html {
  }
 
 body {
-    /* Default font size = 1rem*/
     font-size: 18px;
     background-repeat: repeat;
     background-image: url("assets/img/background.png");
@@ -14,7 +13,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-/* Scroll to top Button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* ----------------SCROLL TO TOP BUTTON---------------- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #myBtn {
    display: none; /* Hidden by default */
    position: fixed; /* Fixed/sticky position */
@@ -56,30 +55,6 @@ h3 {
    margin-left: 1.5rem;
 }
 
-/* Style the header */
-.header {
-   padding: 10px 16px;
-   background: #555;
-   color: #f1f1f1;
- }
- 
- /* Page content */
- .content {
-   padding: 16px;
- }
- 
- /* The sticky class is added to the header with JS when it reaches its scroll position */
- .sticky {
-   position: fixed;
-   top: 0;
-   width: 100%
- }
- 
- /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
- .sticky + .content {
-   padding-top: 102px;
- }
-
 /* Table of Contents */
 nav {
    text-align: center; 
@@ -104,7 +79,6 @@ body, html {
   height: 100%;
 }
 
-/* Title Box */
 .bg-text {
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -120,8 +94,7 @@ body, html {
    text-align: center;
  }
 
-/* -------------------------------------------------- */
-/* SLIDESHOW */
+/* ----------------SLIDESHOW---------------- https://www.w3schools.com/howto/howto_js_slideshow.asp */
 /* Slideshow container */
 .slideshow-container {
   max-width: 750px;
@@ -135,7 +108,7 @@ body, html {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Arrows */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -151,7 +124,6 @@ body, html {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -201,10 +173,8 @@ body, html {
   to {opacity: 1}
 }
 
-/* -------------------------------------------------- */
-
-/* Columns 
-https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+/* ----------------COLUMNS---------------- https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+/* Title Page */
 .column {
    margin-top: 2rem;
    float: left;
@@ -235,7 +205,6 @@ https://www.w3schools.com/howto/howto_css_two_columns.asp*/
    /* Loop Shake */
    animation-iteration-count: infinite;
  }
- /* Shake */
  @keyframes shake {
    0% { transform: translate(1px, 1px) rotate(0deg); }
    10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -250,14 +219,7 @@ https://www.w3schools.com/howto/howto_css_two_columns.asp*/
    100% { transform: translate(1px, -2px) rotate(-1deg); }
  }
 
-/* -------------------------------------------------- */
-
-
-
-/* -------------------------------------------------- */
-
-/* Glitch Title 
-https://10015.io/tools/css-text-glitch-effect-generator */
+/* ----------------TITLE GLITCH---------------- https://10015.io/tools/css-text-glitch-effect-generator */
 .glitch-wrapper {
    width: 100%;
    height: 100%;

@@ -1,13 +1,13 @@
-// Slideshow
+// ----------------SLIDESHOW---------------- https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Arrows
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Thumbnail Img
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -28,7 +28,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Get the button:
+// ----------------SCROLL TO TOP BUTTON---------------- https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 let mybutton = document.getElementById("myBtn");
 
 // Appear when scroll
@@ -61,22 +61,4 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-}
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
 }
